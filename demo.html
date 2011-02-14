@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Trunkit.js Demo</title>
+  <style>
+	.test-1 { width:50px; font-size:16px; line-height:18px; }
+	.test-2 { width:150px; font-size:16px; line-height:18px; }
+	.test-3 { width:250px; font-size:16px; line-height:18px; }
+	.test-4 { width:350px; font-size:16px; line-height:18px; }
+	.test-5 { width:450px; font-size:16px; line-height:18px; }
+  </style>
+
+</head>
+<body>
+
+  <div id="container">
+    <p class="test-1 truncate">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac sem id metus lobortis eleifend ut at turpis. Sed vestibulum diam sit amet turpis dictum at placerat dui condimentum. Aliquam vehicula sodales elit, ut blandit enim facilisis in. Praesent id diam vel neque ornare feugiat nec in risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum rhoncus nisl, ac aliquet massa venenatis ut. Nullam feugiat mauris a sem imperdiet a pharetra erat elementum. Sed vestibulum porta odio, a rhoncus massa ultricies ut. Cras aliquam dui non mauris viverra at lacinia sapien lacinia. Pellentesque venenatis metus et felis ornare ultrices. Nulla ac est lectus, a vestibulum nibh. In hac habitasse platea dictumst. Etiam justo arcu, sollicitudin vel venenatis nec, hendrerit vitae massa.
+	</p>
+	<p class="test-2 truncate">
+		Integer quis erat et nulla aliquam fermentum at ut quam. Etiam eu dui sem, a volutpat ante. Maecenas elementum mattis fermentum. Integer tempus elit urna, non egestas neque. Donec iaculis tempor aliquam. Vestibulum lobortis eleifend fermentum. Duis lorem libero, malesuada eget facilisis a, ultricies a arcu. Etiam dignissim volutpat urna cursus dignissim. Donec interdum ornare iaculis. Mauris rutrum lorem id metus semper ac pretium nisi eleifend. Maecenas tristique commodo massa nec viverra. Integer faucibus vehicula nisi vel ornare. Aenean interdum, massa a ullamcorper aliquam, arcu nisl eleifend nibh, nec congue elit nulla ut sem. Cras dignissim faucibus elit, at consectetur dui semper at. Donec arcu neque, tempus quis ullamcorper at, rutrum rutrum risus. Vivamus bibendum lacus dictum lectus euismod luctus.
+	</p>
+	<p class="test-3 truncate">
+		Morbi sodales pellentesque tellus, ac congue sem dictum ut. Praesent placerat ullamcorper purus, at condimentum lectus interdum quis. Morbi leo turpis, sollicitudin id tincidunt semper, tristique in nisl. Phasellus accumsan nibh vel urna dignissim bibendum. Maecenas eget odio lectus. Aenean hendrerit, eros a dapibus elementum, turpis nibh vulputate dolor, in consectetur enim odio et nisi. Ut pellentesque libero at nulla semper in porttitor est tempus. Pellentesque eget elit quis nisi volutpat ornare. Fusce pulvinar, est vitae sodales tincidunt, nibh turpis sodales turpis, ut dictum quam tortor a ipsum. Nam metus neque, posuere ac dapibus ut, sagittis a libero. Sed sed magna risus. Quisque vulputate gravida ante, sit amet blandit tellus accumsan sit amet. Cras eleifend facilisis nisi, pharetra semper mauris tempus et. Duis sed nulla dui, non semper urna. Morbi in consectetur ante. Donec vitae elit quam. Curabitur metus lectus, tempus ut consectetur et, tristique et nibh.
+	</p>
+	<p class="test-4 truncate">
+		In vulputate nunc at sem venenatis faucibus. Cras eget ipsum tortor, sodales malesuada lectus. Sed eu enim id quam aliquam blandit quis quis risus. Integer mauris neque, iaculis eu lacinia id, bibendum malesuada erat. Integer tristique convallis nisi ut suscipit. Suspendisse accumsan gravida erat, et dignissim urna rutrum vitae. Phasellus non lorem nunc, id lacinia felis. Vestibulum augue risus, tincidunt non venenatis eu, rutrum vitae odio. Cras arcu urna, gravida a mattis eu, faucibus non dui. Sed id tempus libero. Fusce mattis, turpis at porttitor feugiat, leo justo cursus neque, eu volutpat urna velit ut leo. Nunc feugiat lectus nec quam cursus rhoncus. Aenean quis neque ante, a accumsan tellus. Donec non pretium ligula. Cras ullamcorper dignissim fringilla.
+	</p> 
+	<p class="test-5 truncate">
+		Pellentesque gravida dignissim bibendum. Proin rhoncus eleifend odio, in ultricies dolor tincidunt non. Vestibulum laoreet magna a lacus euismod et commodo metus sagittis. Aenean malesuada consectetur gravida. Sed id lobortis lorem. Quisque adipiscing nibh nec augue vehicula dictum. Fusce viverra ultricies lorem, vitae malesuada lorem adipiscing ac. Fusce volutpat bibendum vehicula. Aenean vehicula lacinia lorem, lacinia tempor lorem tincidunt eget. Sed sodales sem vitae nisl porta malesuada. Nam aliquet pulvinar nisi a cursus. Mauris fringilla turpis in sem laoreet ut lobortis tellus congue. Nullam sagittis nunc vitae neque imperdiet quis tempor augue suscipit. Nam congue ipsum sit amet elit semper nec congue nisi pulvinar.
+	</p> 
+  </div> <!-- end of #container -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="jquery.trunkit.js"></script>
+  <script>
+  	$(document).ready(function() {
+		$('.truncate').trunkit();
+	});
+  </script>
+  
+</body>
+</html>
