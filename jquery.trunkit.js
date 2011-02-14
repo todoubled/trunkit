@@ -1,7 +1,8 @@
 $.fn.trunkit = function(options) {
 	var options = $.extend({}, {
 		recurse: true,
-		postprocessed: true
+		postProcessed: true,
+		imgException: '.doc_icon'
 	}, options);
 
 	/* options note:
@@ -23,7 +24,7 @@ $.fn.trunkit = function(options) {
 		return $container.height();
 	}
 
-	// Tests height of content to check for multiple lines = needs truncation
+	// Tests width of content to check for overflow = needs truncation
 	function testWidth(contents, CSS) {
 		var myClass = "trunkit-test-width",
 			$container;
@@ -40,6 +41,7 @@ $.fn.trunkit = function(options) {
 	// Check all table cell content and truncate if more than one line
 	$(this).each(function() {
 		var self = this,
+			height = 25,
 			hasChildren = $(this).children(),
 			hasTips = $(this).find("div.tip-content"),
 			hasImg = $(this).find("img").hasClass("doc_icon"),
@@ -76,7 +78,7 @@ $.fn.trunkit = function(options) {
 		var testedHeight = testHeight(contents, CSS);
 		
 		// If contents breaks to two lines, truncate text
-		if (testedHeight > 25) {	
+		if (testedHeight > height) {	
 			var textArray = contents.split(' ');
 			textArray.splice(textArray.length - 1, 1);
 			$(self).text(textArray.join(' ') + '…');
